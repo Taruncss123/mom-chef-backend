@@ -10,11 +10,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-// NOTE: We no longer serve static files directly from the backend
-// app.use(express.static(path.join(__dirname, 'public'))); 
 
-// File paths
-// In a production environment like Render, files are stored at the root.
+// File paths - All data files are now at the root with the server.
 const menuFilePath = path.join(__dirname, 'menu.json');
 const ordersFilePath = path.join(__dirname, 'orders.json');
 const reservationsFilePath = path.join(__dirname, 'reservations.json');
@@ -51,8 +48,7 @@ app.get('/', (req, res) => {
 // Get the full menu
 app.get('/api/menu', async (req, res) => {
     try {
-        // Since we removed the /public folder from the backend, menu.json is at the root
-        const menuData = await readData(path.join(__dirname, 'public', 'menu.json'));
+        const menuData = await readData(menuFilePath);
         res.json(menuData);
     } catch (error) {
         console.error('Error reading menu file:', error);
@@ -115,8 +111,7 @@ app.post('/api/update-menu', async (req, res) => {
         return res.status(401).json({ message: "Unauthorized" });
     }
     try {
-        // The menu.json file should be at the root on the server
-        await writeData(path.join(__dirname, 'public', 'menu.json'), menu);
+        await writeData(menuFilePath, menu);
         res.status(200).json({ message: 'Menu updated successfully!' });
     } catch (error) {
         console.error('Error updating menu:', error);
@@ -172,7 +167,6 @@ app.get('/api/export-customers', async (req, res) => {
     }
 });
 
-// ** THE FIX IS HERE: The catch-all route that caused the error has been removed. **
 
 app.listen(PORT, () => {
     console.log(`The Mom Chef backend server is running on http://localhost:${PORT}`);
