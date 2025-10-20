@@ -1,0 +1,80 @@
+{
+  "indian": [
+    {
+      "name": "Butter Paneer",
+      "price": 299,
+      "img": "https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg",
+      "desc": "A rich and creamy dish of paneer (cottage cheese) cubes in a tomato, butter, and cashew sauce."
+    },
+    {
+      "name": "Veg Biryani",
+      "price": "220",
+      "img": "https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/easy-vegetable-biryani.jpg",
+      "desc": "Aromatic basmati rice cooked with a medley of fresh vegetables and fragrant spices."
+    },
+    {
+      "name": "Dal Makhani",
+      "price": 279,
+      "img": "https://sinfullyspicy.com/wp-content/uploads/2015/03/1200-by-1200-images-1-500x375.jpg",
+      "desc": "A classic Punjabi dish made with whole black lentils, red kidney beans, butter, and cream."
+    },
+    {
+      "name": "Garlic naan",
+      "price": "80",
+      "img": "https://allwaysdelicious.com/wp-content/uploads/2022/04/garlic-butter-naan-4.jpg",
+      "desc": "Soft, fluffy Indian bread topped with fresh garlic and butter."
+    }
+  ],
+  "chinese": [
+    {
+      "name": "Hakka Noodles",
+      "price": 199,
+      "img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg",
+      "desc": "Classic Indo-Chinese stir-fried noodles with a variety of vegetables."
+    },
+    {
+      "name": "Veg Manchurian",
+      "price": 179,
+      "img": "https://holycowvegan.net/wp-content/uploads/2020/03/veg-manchurian-7-500x500.jpg",
+      "desc": "Deep-fried vegetable balls in a savory, sweet, and tangy sauce."
+    },
+    {
+      "name": "Chilli Paneer Dry",
+      "price": 229,
+      "img": "https://www.cookclickndevour.com/wp-content/uploads/2016/05/chilli-paneer-recipe-1.jpg",
+      "desc": "Crispy fried paneer tossed with bell peppers and onions in a spicy sauce."
+    },
+    {
+      "name": "Spring Rolls",
+      "price": 129,
+      "img": "https://d1mxd7n691o8sz.cloudfront.net/static/recipe/recipe/2023-12/Vegetable-Spring-Rolls-2-1-906001560ca545c8bc72baf473f230b4_thumbnail_170.jpeg",
+      "desc": "Crispy fried rolls filled with a savory vegetable stuffing."
+    }
+  ],
+  "fastfood": [
+    {
+      "name": "Veggie Pizza",
+      "price": 249,
+      "img": "https://madhurasrecipe.com/wp-content/uploads/2023/12/Veg-Pizza-2.jpg",
+      "desc": "A delicious pizza topped with a variety of fresh vegetables and mozzarella cheese."
+    },
+    {
+      "name": "Cheese Burger",
+      "price": 149,
+      "img": "https://mcdonaldsblog.in/wp-content/uploads/2016/06/mcspicy-paneer-1-1.jpg",
+      "desc": "A classic burger with a savory vegetable patty, melted cheese, and fresh toppings."
+    },
+    {
+      "name": "Pasta Alfredo",
+      "price": 219,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYKmgVvVfvA9SPhBgcL3VcuKMPSIjwaYg_A&s",
+      "desc": "Creamy and rich white sauce pasta, a favorite for all ages."
+    },
+    {
+      "name": "French Fries",
+      "price": 99,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-yEQFkBTlySNv8Y-Vr-sdATg1tzy_kO2rg&s",
+      "desc": "Crispy, golden-fried potato sticks, perfectly salted."
+    }
+  ]
+}
